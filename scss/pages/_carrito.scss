@@ -1,0 +1,55 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    
+    h1 {
+        color: white;
+    };
+};
+
+
+.carrito-contenedor {
+    color: white;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    
+    .producto-pagar {
+        width: 360px;
+        border: 1px solid white;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contenedor-img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        display: flex; 
+        align-items: center;
+        padding-right: 1.5rem;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding-right: 4.5em;
+    }
+    
+    
+};
+
+.contenedor-boton {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+

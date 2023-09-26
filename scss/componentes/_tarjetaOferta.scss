@@ -1,0 +1,101 @@
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    &__contenedor {
+        border: 1px solid white;
+        border-radius: 2rem;
+    }
+
+    &__titulo {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    
+    &__contenedor-img-principal {
+        background-color: aqua;
+        width: 320px;
+        height: 250px;
+        overflow: hidden;
+        // border-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        
+    }
+    
+    &__img-principal {
+        width: 100%;
+        height: auto;
+        display: block; 
+        display: block;
+    }
+
+    .titulo-color {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        padding-top: 0.5rem;
+        
+    }
+
+    .precio {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+}
+
+
+.nombreProducto {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    margin-top: 0.4rem;
+    justify-content: space-between;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+
+    &__bateria {
+        display: flex;
+        align-items: center;
+        
+        img {
+            width: 2.1rem;
+        }
+    }
+
+    & p {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    
+}
+
+.coloresCelular {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    .punto-color {
+        width: 39px;
+        height: 39px;
+        background-color: #000000;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+}

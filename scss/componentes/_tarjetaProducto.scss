@@ -1,0 +1,87 @@
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    overflow: hidden;
+    height: 158px;
+    width: 320px;
+    color: white;
+
+    transform-origin: left;
+    transform: translateX(-100%) rotateY(-90deg);
+    animation: slideIn 1s ease-in-out forwards;
+
+    &__conteiner-img {
+
+        img {
+            width: 120px;
+        }
+
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+        padding-top: 0.9rem;
+    }
+
+    &__producto {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__precio {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    &__bateria {
+        display: flex;
+        // text-align: center;
+        align-items: center;
+        padding-bottom: 0.3rem;
+
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 0;
+
+        }
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+
+
+}
+
+;
+
+.conteiner-tarjera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    padding-left: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%) rotateY(-90deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(0);
+    }
+}

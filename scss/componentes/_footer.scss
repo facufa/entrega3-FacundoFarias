@@ -1,0 +1,68 @@
+footer {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    color: white;
+    height: 8rem;
+
+    p {
+        padding-bottom: 0.2rem;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+
+    input {
+
+        color: white;
+        font-weight: bold;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: 1px solid white;
+        border-radius: 2rem;
+        height: 1.6rem;
+
+
+        display: flex;
+        text-align: center;
+        width: 13rem;
+        height: 2rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+
+    }
+    
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    height: auto;
+    padding-top: 1rem;
+    // overflow: hidden; para que la img no se salga de contenedor
+    
+    &__iconos {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        
+        img {
+            width: 40px;
+            transition: transform 0.1s ease;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__copyright {
+        padding-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+       
+
+}

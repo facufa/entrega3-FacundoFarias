@@ -1,0 +1,64 @@
+.cotenedor-logo {
+    display: flex;
+    justify-content: center;
+    // margin-top: 3rem;
+    margin-bottom: 1rem;
+    
+    img {
+        width: 280px;
+        height: auto;
+        background-size: cover;
+        animation: bounce 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    }
+    
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial y final */
+    }
+    10% {
+      transform: translateY(-20px); /* Punto más alto del rebote */
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+
+    &__ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 14rem;
+        padding-left: 0rem;
+
+        & li {
+            width: 14rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+
+@media (min-width: $tablet) {
+
+    .cotenedor-logo img {
+        width: 380px;
+    }
+
+ 
+}
+
+@media (min-width: $desktop) {
+
+    .cotenedor-logo img {
+        width: 500px;
+    }
+
+ 
+}

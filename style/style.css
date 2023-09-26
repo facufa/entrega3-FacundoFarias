@@ -1,0 +1,534 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #111224;
+  font-family: "Montserrat";
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.cotenedor-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.cotenedor-logo img {
+  width: 280px;
+  height: auto;
+  background-size: cover;
+  animation: bounce 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  10% {
+    transform: translateY(-20px); /* Punto más alto del rebote */
+  }
+}
+.navegacion {
+  display: flex;
+  justify-content: center;
+}
+.navegacion__ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 14rem;
+  padding-left: 0rem;
+}
+.navegacion__ul li {
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .cotenedor-logo img {
+    width: 380px;
+  }
+}
+@media (min-width: 1200px) {
+  .cotenedor-logo img {
+    width: 500px;
+  }
+}
+.nombreProducto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.4rem;
+  justify-content: space-between;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.nombreProducto__bateria {
+  display: flex;
+  align-items: center;
+}
+.nombreProducto__bateria img {
+  width: 2.1rem;
+}
+.nombreProducto p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.coloresCelular {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.coloresCelular .punto-color {
+  width: 39px;
+  height: 39px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.contenedor-icono {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 0.7rem;
+}
+.contenedor-icono__base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-icono__base p {
+  padding-top: 0.4rem;
+}
+.contenedor-icono__circulo {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+.contenedor-icono__circulo:hover {
+  transform: scale(1.2);
+}
+
+.portada {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.portada p {
+  text-align: center;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+.titulo h1 {
+  color: white;
+}
+
+.carrito-contenedor {
+  color: white;
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+.carrito-contenedor .producto-pagar {
+  width: 360px;
+  border: 1px solid white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+.carrito-contenedor .contenedor-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+.carrito-contenedor .contenedor-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.carrito-contenedor .text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 4.5em;
+}
+
+.contenedor-boton {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.img-conteiner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.img-conteiner img {
+  width: 30rem;
+}
+
+.requisitos {
+  color: white;
+}
+
+.navegacion__boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #3c9b35;
+  width: 11rem;
+  height: 3rem;
+  padding: 2px 2px;
+  border-radius: 30px;
+  border: 1px solid #3c9b35;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.navegacion__boton:hover {
+  color: white;
+  background-color: #3c9b35;
+  transform: scale(1.1);
+}
+
+.carrito__boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #3c9b35;
+  width: 11rem;
+  height: 2.5rem;
+  padding: 2px 2px;
+  border-radius: 30px;
+  border: 1px solid #3c9b35;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.carrito__boton:hover {
+  color: white;
+  background-color: #3c9b35;
+  transform: scale(0.9);
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1rem;
+  color: white;
+  height: 8rem;
+}
+footer p {
+  padding-bottom: 0.2rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+footer input {
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  height: 1.6rem;
+  display: flex;
+  text-align: center;
+  width: 13rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  height: auto;
+  padding-top: 1rem;
+}
+.redes-sociales__iconos {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.redes-sociales__iconos img {
+  width: 40px;
+  transition: transform 0.1s ease;
+}
+.redes-sociales__iconos img:hover {
+  transform: scale(1.2);
+}
+.redes-sociales__copyright {
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+header {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+header ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  width: 2rem;
+  transition: transform 0.2s ease;
+}
+header img:hover {
+  transform: scale(1.3);
+}
+header p {
+  padding-top: 0.1rem;
+  font-size: 0.8rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .buscador-conteiner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+header .buscador-conteiner input {
+  color: white;
+  font-weight: bold;
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  height: 1.6rem;
+  width: 8rem;
+  background-image: url("/images/otros/lupa.png");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 20px 20px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.tarjeta__contenedor {
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+.tarjeta__titulo {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.tarjeta__contenedor-img-principal {
+  background-color: aqua;
+  width: 320px;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+.tarjeta__img-principal {
+  width: 100%;
+  height: auto;
+  display: block;
+  display: block;
+}
+.tarjeta .titulo-color {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.5rem;
+}
+.tarjeta .precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
+.nombreProducto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.4rem;
+  justify-content: space-between;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+.nombreProducto__bateria {
+  display: flex;
+  align-items: center;
+}
+.nombreProducto__bateria img {
+  width: 2.1rem;
+}
+.nombreProducto p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.coloresCelular {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  padding-top: 0.3rem;
+  padding-bottom: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.coloresCelular .punto-color {
+  width: 39px;
+  height: 39px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  overflow: hidden;
+  height: 158px;
+  width: 320px;
+  color: white;
+  transform-origin: left;
+  transform: translateX(-100%) rotateY(-90deg);
+  animation: slideIn 1s ease-in-out forwards;
+}
+.tarjeta__conteiner-img img {
+  width: 120px;
+}
+.tarjeta__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-top: 0.9rem;
+}
+.tarjeta__producto {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.tarjeta__precio {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.tarjeta__bateria {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.3rem;
+}
+.tarjeta__bateria h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.tarjeta__bateria img {
+  width: 1.5rem;
+}
+
+.conteiner-tarjera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  padding-left: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%) rotateY(-90deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(0);
+  }
+}
+.contenedor-carrusel {
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

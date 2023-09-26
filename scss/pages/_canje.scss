@@ -1,0 +1,23 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+.img-conteiner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img {
+        width: 30rem;
+    }
+}
+
+.requisitos {
+    color: white;
+}
